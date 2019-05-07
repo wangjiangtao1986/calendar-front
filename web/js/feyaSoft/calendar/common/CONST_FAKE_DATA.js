@@ -46,9 +46,9 @@ Ext.ux.calendar.CONST = {
 
     loadCalendarURL:'loadCalendar.html',      				//(未测试)
 
-    loadEventURL:'loadEvent.html',                       				//（已测试）
+    loadEventURL:'/api/calendar/loadEvent.html',                       				//（已测试）
 
-    loadRepeatEventURL:'loadRepeatEvent.html',				//使用日历内部刷新控件时被调用//(未测试)
+    loadRepeatEventURL:'/api/calendar/loadRepeatEvent.html',				//使用日历内部刷新控件时被调用//(未测试)
 
     createEventURL:'createEditEvent.html',    				//工作台设置提醒逻辑待实现,较复杂（已测试）
 
@@ -75,7 +75,7 @@ Ext.ux.calendar.CONST = {
 
 
 
-    initialLoadURL:'initialLoad.html',
+    initialLoadURL:'../../api/calendar/initialLoad.html',
 
     listUserURL:'calendar/queryUser',
     updateLockStats:'updateLockStats.html'
