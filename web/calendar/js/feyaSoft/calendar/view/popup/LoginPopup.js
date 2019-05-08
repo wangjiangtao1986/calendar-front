@@ -273,8 +273,7 @@ Ext.define('Ext.ux.calendar.popup.LoginPopup', {
 		this.luserIdField.setValue(userId);
 		this.ruserIdField.setValue(userId);
 		this.uuserIdField.setValue(userId);
-
-	   	 Ext.getCmp("imagebox").getEl().dom.src = newsrc;  
+//	   	 Ext.getCmp("imagebox").getEl().dom.src = newsrc;  
 		this.show();
 	},
 	
@@ -304,7 +303,7 @@ Ext.define('Ext.ux.calendar.popup.LoginPopup', {
 			eh.ds.login(params, function(backObj) {
 //				更新列表
 			    document.getElementById("userId").value=backObj.userId;
-				this.mainPanel.userId=backObj.userId;
+//				this.mainPanel.userId=backObj.userId;
 				this.refresh(eh,cc,1);
 				this.onResetFn();
 			}, this);
