@@ -3,8 +3,8 @@ Ext.ns("Ext.ux.calendar");
 
 Ext.ux.calendar.Language = {
     'CalendarWin':{
-        'title':'日程管理',
-        'loadMask.msg':'欢迎使用日程管理，请稍候...'
+        'title':'日程管理CalendarWin',
+        'loadMask.msg':'功能初始化中，请稍候...'
     },
 
     'MainPanel':{

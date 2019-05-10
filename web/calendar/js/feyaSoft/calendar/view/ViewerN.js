@@ -1,33 +1,8 @@
-/**
- * FeyaSoft MyCalendar
- * Copyright(c) 2006-2012, FeyaSoft Inc. All right reserved.
- * info@cubedrive.com
- * http://www.cubedrive.com
- *
- * Please read license first before your use myCalendar, For more detail
- * information, please can visit our link: http://www.cubedrive.com/myCalendar
- *
- * You need buy one of the Feyasoft's License if you want to use MyCalendar in
- * your commercial product. You must not remove, obscure or interfere with any
- * FeyaSoft copyright, acknowledgment, attribution, trademark, warning or
- * disclaimer statement affixed to, incorporated in or otherwise applied in
- * connection with the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
- * KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
- * WARRANTIES OF MERCHANTABILITY,FITNESS FOR A PARTICULAR PURPOSE
- * AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
- * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
- * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */
 
 Ext.onReady(function() {
     Ext.tip.QuickTipManager.init();
     Ext.QuickTips.init();
-    var wait = new Ext.LoadMask(document.body, {
-        msg : '<b>欢迎使用日程管理请稍后, 配置信息加载中</b>...'
+    var wait = new Ext.LoadMask(document.body, {        msg:Ext.ux.calendar.CONST.PROJECT_WELCOME_SIGN
     });
     wait.show();
 
@@ -67,13 +42,6 @@ Ext.onReady(function() {
                 } else {
 
                     var mp = Ext.create('Ext.ux.calendar.MainPanel', { 
-//                    	title : '欢迎使用综合工作台日程管理',
-//                    	tools : [{
-//                            type : 'close',
-//                            handler : function(){                            	
-//                            	window.close();
-//                            }
-//                        }],
                         datasource : ds,
                         calendarSetting : cs,
                         userId : userId

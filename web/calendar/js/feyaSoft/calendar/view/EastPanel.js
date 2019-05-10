@@ -27,7 +27,7 @@ Ext.define('Ext.ux.calendar.WestPanel', {
 	
     extend : 'Ext.Panel',
     
-    title: '日程管理',
+    title: '日程管理WestPanel',
     
     iconCls: 'icon-cubedrive',
         
